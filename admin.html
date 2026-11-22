@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Purewal Estates | Admin</title><link rel="stylesheet" href="styles.css"><style>
+body{background:#f2f0ea}.admin-wrap{max-width:900px;margin:55px auto;padding:0 20px}.admin-top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:25px}.admin-card{background:white;padding:26px;margin:18px 0;border:1px solid #e7e3da}.admin-card h1,.admin-card h2{font-family:"Playfair Display",serif;font-weight:500}.admin-form{display:grid;grid-template-columns:1fr 1fr;gap:13px}.admin-form label{font-size:11px;font-weight:700}.admin-form input,.admin-form select,.admin-form textarea{display:block;width:100%;margin-top:6px;padding:12px;border:1px solid #ddd;background:#fcfbf8;font:13px "DM Sans",sans-serif}.admin-form .full{grid-column:1/-1}.admin-button{border:0;background:#101c32;color:white;padding:13px 18px;cursor:pointer;font-weight:700}.admin-button.gold{background:#c5a66b;color:#101c32}.admin-button.danger{background:#8e3030}.admin-list-item{display:flex;justify-content:space-between;align-items:center;gap:15px;border-top:1px solid #eee;padding:14px 0}.admin-list-item small{display:block;color:#78808a;margin-top:5px}.admin-actions{display:flex;gap:8px}.admin-actions button{padding:8px 10px}.notice{font-size:12px;color:#647080;line-height:1.6}.hidden{display:none!important}@media(max-width:600px){.admin-form{grid-template-columns:1fr}.admin-form .full{grid-column:auto}.admin-top{align-items:flex-start;flex-direction:column}.admin-list-item{align-items:flex-start;flex-direction:column}}
+</style></head><body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">P<span>E</span></span><span class="brand-copy"><strong>PUREWAL ESTATES</strong><small>ADMIN PANEL</small></span></a><a href="index.html" style="color:#e6ca91;font-size:12px">View website ↗</a></header>
+<main class="admin-wrap">
+  <div id="login-panel" class="admin-card"><div class="section-kicker">PRIVATE MANAGEMENT</div><h1>Admin login</h1><p class="notice">Sign in with the admin email and password created in your Supabase project. Do not share these credentials.</p><form id="login-form" class="admin-form"><label class="full">Email<input type="email" id="email" required autocomplete="username"></label><label class="full">Password<input type="password" id="password" required autocomplete="current-password"></label><div class="full"><button class="admin-button gold">Sign in</button></div></form><p id="login-message" class="notice"></p></div>
+  <section id="dashboard" class="hidden">
+    <div class="admin-top"><div><div class="section-kicker">PUREWAL ESTATES</div><h1 style="font:500 34px 'Playfair Display',serif;margin:8px 0">Property dashboard</h1></div><button id="logout" class="admin-button">Log out</button></div>
+    <div class="admin-card"><h2 id="form-heading">Add a property</h2><form id="property-form" class="admin-form">
+      <input type="hidden" id="property-id">
+      <label>Property title<input id="title" required placeholder="e.g. 2-bedroom house"></label>
+      <label>Category<select id="category"><option>Residential</option><option>Commercial</option><option>Agricultural Land</option><option>Industrial</option><option>Rental</option><option>Investment</option></select></label>
+      <label>Location<input id="location" required placeholder="Kurali / Morinda / Kharar"></label>
+      <label>Area<input id="area" placeholder="e.g. 200 sq. yd."></label>
+      <label>Price<input id="price" placeholder="e.g. ₹45 lakh / Price on request"></label>
+      <label>Status<select id="status"><option>Available</option><option>Sold</option><option>Rented</option><option>Under offer</option></select></label>
+      <label class="full">Property photo<input id="photo" type="file" accept="image/*"></label>
+      <label class="full">Description<textarea id="description" rows="3" placeholder="Key features and details"></textarea></label>
+      <div class="full" style="display:flex;gap:10px;flex-wrap:wrap"><button class="admin-button gold" type="submit">Save property</button><button class="admin-button" type="button" id="reset-form">Clear form</button></div>
+    </form><p id="form-message" class="notice"></p></div>
+    <div class="admin-card"><h2>Manage properties</h2><div id="property-list"><p class="notice">Loading…</p></div></div>
+  </section>
+</main>
+<script type="module" src="admin.js"></script></body></html>
