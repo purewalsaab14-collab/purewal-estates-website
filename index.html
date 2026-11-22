@@ -5,241 +5,590 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Purewal Estates in Kurali, Punjab offers assistance with residential, commercial, agricultural and industrial properties across Kurali, Morinda and Kharar. Contact our team for property buying, selling, rentals and investment.">
+  <title>Purewal Estates | Property Dealers in Kurali, Morinda & Kharar</title>
+
+  <meta name="description" content="Purewal Estates helps you buy, sell and rent residential, commercial, agricultural and industrial properties in Kurali, Morinda and Kharar, Punjab. Contact us today.">
 
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#101c32">
+  <link rel="canonical" href="https://purewalestates.purewalsaab14.workers.dev/">
 
-  <link rel="canonical" href="https://purewal-estates-website.purewalsaab14.workers.dev/">
+  <meta property="og:title" content="Purewal Estates | Property • Trust • Investment">
+  <meta property="og:description" content="Your trusted property partner in Kurali, Morinda and Kharar, Punjab.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://purewalestates.purewalsaab14.workers.dev/">
 
-  <title>Purewal Estates | Property Dealers in Kurali, Morinda & Kharar</title>
+  <meta name="theme-color" content="#101c2c">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "name": "Purewal Estates",
-    "description": "Purewal Estates provides assistance with residential, commercial, agricultural and industrial properties, property buying, selling, rentals and investment across Kurali, Morinda and Kharar, Punjab.",
-    "url": "https://purewal-estates-website.purewalsaab14.workers.dev/",
-    "telephone": "+919056862022",
+    "url": "https://purewalestates.purewalsaab14.workers.dev/",
+    "description": "Real estate services for residential, commercial, agricultural and industrial properties in Kurali, Morinda and Kharar, Punjab.",
+    "telephone": "+91-9056862022",
     "areaServed": [
-      {
-        "@type": "City",
-        "name": "Kurali"
-      },
-      {
-        "@type": "City",
-        "name": "Morinda"
-      },
-      {
-        "@type": "City",
-        "name": "Kharar"
-      }
+      {"@type": "City", "name": "Kurali"},
+      {"@type": "City", "name": "Morinda"},
+      {"@type": "City", "name": "Kharar"}
     ],
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+919056862022",
-        "contactType": "customer service",
-        "name": "Rassveen Singh"
+        "telephone": "+91-9056862022",
+        "contactType": "sales"
       },
       {
         "@type": "ContactPoint",
-        "telephone": "+919463596573",
-        "contactType": "customer service",
-        "name": "Parminder Singh"
+        "telephone": "+91-9463596573",
+        "contactType": "sales"
       }
     ],
     "knowsAbout": [
-      "Residential Property",
-      "Commercial Property",
-      "Agricultural Land",
-      "Industrial Property",
-      "Property Buying and Selling",
-      "Property Rentals",
-      "Real Estate Investment"
+      "Residential properties",
+      "Commercial properties",
+      "Agricultural land",
+      "Industrial properties",
+      "Property buying and selling",
+      "Rental properties",
+      "Real estate investment"
     ]
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f8fa;
+      color: #182333;
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; }
+
+    .topbar {
+      background: #101c2c;
+      color: #fff;
+      padding: 10px 6%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 13px;
+    }
+
+    header {
+      background: #fff;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      box-shadow: 0 3px 15px rgba(0,0,0,.06);
+    }
+
+    .brand h1 {
+      font-family: Georgia, serif;
+      color: #14243a;
+      font-size: 27px;
+      letter-spacing: 1px;
+    }
+
+    .brand p {
+      color: #b18a48;
+      font-size: 11px;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    nav a {
+      color: #24364c;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover { color: #b18a48; }
+
+    .hero {
+      min-height: 490px;
+      padding: 90px 7%;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(110deg, #101c2c 0%, #1c3550 75%, #263e54 100%);
+      color: #fff;
+    }
+
+    .hero-content { max-width: 720px; }
+
+    .eyebrow {
+      color: #d9b777;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(38px, 6vw, 60px);
+      line-height: 1.12;
+      margin-bottom: 22px;
+    }
+
+    .hero h2 span { color: #d9b777; }
+
+    .hero p {
+      max-width: 590px;
+      color: #e0e6ed;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 23px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin: 5px 8px 5px 0;
+      transition: .2s;
+    }
+
+    .btn-gold { background: #c49b59; color: #101c2c; }
+    .btn-outline { border: 1px solid #d9b777; color: #fff; }
+    .btn:hover { transform: translateY(-2px); }
+
+    section { padding: 75px 7%; }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .section-heading small {
+      color: #b18a48;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, serif;
+      font-size: 34px;
+      color: #14243a;
+      margin-top: 8px;
+    }
+
+    .section-heading p {
+      color: #687587;
+      max-width: 650px;
+      margin: 10px auto 0;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      color: #5b6675;
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 28px 23px;
+      border-radius: 8px;
+      border: 1px solid #e8ebef;
+      box-shadow: 0 5px 20px rgba(0,0,0,.04);
+    }
+
+    .service-card .symbol {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+      color: #172b43;
+      margin-bottom: 9px;
+      font-size: 19px;
+    }
+
+    .service-card p { color: #687587; font-size: 14px; }
+
+    .listings-section { background: #eef1f5; }
+
+    #listing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .listing-placeholder {
+      text-align: center;
+      padding: 30px;
+      color: #687587;
+      background: #fff;
+      border-radius: 8px;
+      grid-column: 1 / -1;
+    }
+
+    .locations {
+      background: #14243a;
+      color: #fff;
+      text-align: center;
+    }
+
+    .locations h2 {
+      font-family: Georgia, serif;
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .locations p { color: #d5dce5; }
+
+    .location-tags {
+      display: flex;
+      justify-content: center;
+      gap: 13px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    .location-tags span {
+      border: 1px solid #c49b59;
+      padding: 9px 20px;
+      border-radius: 30px;
+      color: #f0d7a8;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .contact-card, .form-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    }
+
+    .contact-card h3, .form-card h3 {
+      color: #14243a;
+      margin-bottom: 18px;
+      font-size: 21px;
+    }
+
+    .contact-person {
+      padding: 13px 0;
+      border-bottom: 1px solid #edf0f3;
+    }
+
+    .contact-person:last-child { border-bottom: 0; }
+
+    .contact-person strong { display: block; color: #24364c; }
+
+    .contact-person a { color: #a67c3d; font-weight: bold; }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 13px;
+      margin-bottom: 13px;
+      border: 1px solid #dce1e7;
+      border-radius: 4px;
+      font: inherit;
+      background: #fff;
+    }
+
+    textarea { min-height: 110px; resize: vertical; }
+
+    button {
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #14243a;
+      color: #fff;
+      padding: 14px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .submit-btn:hover { background: #b18a48; }
+
+    footer {
+      background: #0d1826;
+      color: #cbd3dd;
+      padding: 35px 7%;
+      text-align: center;
+    }
+
+    footer strong {
+      display: block;
+      font-family: Georgia, serif;
+      font-size: 23px;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    footer p { font-size: 13px; margin-top: 8px; }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 10;
+      background: #20b968;
+      color: #fff;
+      padding: 13px 18px;
+      border-radius: 40px;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    }
+
+    @media (max-width: 650px) {
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; gap: 14px; }
+      .hero { padding: 70px 7%; min-height: 430px; }
+      section { padding: 55px 6%; }
+      .topbar { justify-content: center; text-align: center; }
+    }
+  </style>
 </head>
 
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Purewal Estates home">
-      <span class="brand-mark">P<span>E</span></span>
-      <span class="brand-copy"><strong>PUREWAL ESTATES</strong><small>KURALI, PUNJAB</small></span>
-    </a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <nav class="nav">
-      <a href="#home">Home</a><a href="#about">About</a><a href="#properties">Properties</a>
-      <a href="#services">Services</a><a href="#contact" class="nav-cta">Contact us</a>
+
+  <div class="topbar">
+    <span>PUREWAL ESTATES — PROPERTY • TRUST • INVESTMENT</span>
+    <span>Kurali | Morinda | Kharar, Punjab</span>
+  </div>
+
+  <header>
+    <div class="brand">
+      <h1>PUREWAL ESTATES</h1>
+      <p>PROPERTY • TRUST • INVESTMENT</p>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#properties">Properties</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-shade"></div>
       <div class="hero-content">
-        <p class="eyebrow"><span></span> PROPERTY • TRUST • INVESTMENT</p>
-        <h1>Find the right place<br><em>to move forward.</em></h1>
-        <p class="hero-lead">Thoughtful property guidance for buying, selling and investing across Kurali, Morinda and Kharar.</p>
-        <div class="hero-actions">
-          <a class="button button-gold" href="#properties">Explore properties <span>↗</span></a>
-          <a class="button button-outline" href="#contact">Talk to our team</a>
-        </div>
-        <div class="hero-note"><span class="note-line"></span> LOCAL KNOWLEDGE. PERSONAL SERVICE.</div>
-      </div>
-      <div class="hero-side-label">KURALI · MORINDA · KHARAR</div>
-    </section>
-
-    <section class="intro section-wrap" id="about">
-      <div class="section-kicker">WELCOME TO PUREWAL ESTATES</div>
-      <div class="intro-grid">
-        <h2>Property decisions<br>deserve <em>clarity.</em></h2>
-        <div class="intro-copy">
-          <p>Whether you are looking for a home, land for your next project, a commercial space or the right investment, Purewal Estates is here to help you take the next step with confidence.</p>
-          <p class="muted">Based in Kurali, we work across the surrounding property market with a focus on clear communication and personal assistance.</p>
-          <a class="text-link" href="#contact">Get in touch <span>→</span></a>
-        </div>
+        <div class="eyebrow">YOUR PROPERTY. YOUR FUTURE.</div>
+        <h2>Find the Right Property. <span>Build Your Future.</span></h2>
+        <p>
+          Your trusted real estate partner for buying, selling and renting
+          properties in Kurali, Morinda and Kharar, Punjab.
+        </p>
+        <a class="btn btn-gold" href="#properties">Explore Properties</a>
+        <a class="btn btn-outline" href="#contact">Contact Us</a>
       </div>
     </section>
 
-    <section class="property-section" id="properties">
-      <div class="section-wrap">
-        <div class="section-heading">
-          <div><div class="section-kicker">EXPLORE YOUR OPTIONS</div><h2>Find a property<br><em>that fits your plans.</em></h2></div>
-          <p>Explore the property categories we assist with. Contact us for current availability, details and site visits.</p>
-        </div>
-
-        <div class="property-grid">
-          <article class="property-card large-card">
-            <div class="property-image residential"><span class="image-tag">01 / RESIDENTIAL</span></div>
-            <div class="property-info"><div><h3>Homes & Residential Plots</h3><p>Houses, flats, apartments and residential land.</p></div><a href="#contact" aria-label="Enquire about residential property">↗</a></div>
-          </article>
-
-          <article class="property-card">
-            <div class="property-image commercial"><span class="image-tag">02 / COMMERCIAL</span></div>
-            <div class="property-info"><div><h3>Commercial Spaces</h3><p>Shops, showrooms and office spaces.</p></div><a href="#contact" aria-label="Enquire about commercial property">↗</a></div>
-          </article>
-
-          <article class="property-card">
-            <div class="property-image land"><span class="image-tag">03 / LAND</span></div>
-            <div class="property-info"><div><h3>Agricultural & Other Land</h3><p>Land options for different requirements.</p></div><a href="#contact" aria-label="Enquire about land">↗</a></div>
-          </article>
-
-          <article class="property-card">
-            <div class="property-image industrial"><span class="image-tag">04 / INDUSTRIAL</span></div>
-            <div class="property-info"><div><h3>Industrial Property</h3><p>Industrial plots and suitable premises.</p></div><a href="#contact" aria-label="Enquire about industrial property">↗</a></div>
-          </article>
-
-          <article class="property-card">
-            <div class="property-image investment"><span class="image-tag">05 / RENTALS & INVESTMENT</span></div>
-            <div class="property-info"><div><h3>Rentals & Investments</h3><p>Explore rental and property investment options.</p></div><a href="#contact" aria-label="Enquire about rentals and investments">↗</a></div>
-          </article>
-        </div>
-
-        <p class="listing-note">Looking for a specific property? Tell us your location, budget and requirements. We'll help you explore suitable options.</p>
+    <section id="about">
+      <div class="section-heading">
+        <small>WHO WE ARE</small>
+        <h2>About Purewal Estates</h2>
+      </div>
+      <div class="about">
+        <p>
+          Purewal Estates is a real estate business serving Kurali, Morinda
+          and Kharar, Punjab. We assist clients with residential plots,
+          houses, commercial properties, agricultural land and industrial
+          properties. Whether you are buying, selling, renting or exploring
+          property investment opportunities, our focus is on honest guidance,
+          transparent dealings and helping you make informed property decisions.
+        </p>
       </div>
     </section>
 
-    <section class="services section-wrap" id="services">
-      <div class="section-kicker">HOW WE CAN HELP</div>
-      <div class="services-grid">
-        <div><h2>More than a<br><em>property search.</em></h2><p class="muted">A clear, personal approach from the first conversation to the next step.</p></div>
+    <section id="services" style="background:#fff;">
+      <div class="section-heading">
+        <small>WHAT WE DO</small>
+        <h2>Our Property Services</h2>
+        <p>Property solutions for individuals, families, businesses and investors.</p>
+      </div>
 
-        <div class="service-list">
-          <div class="service-item"><span>01</span><div><h3>Buy a property</h3><p>Discuss your requirements and explore suitable options.</p></div><b>↗</b></div>
-          <div class="service-item"><span>02</span><div><h3>Sell your property</h3><p>Connect with people looking for property in the area.</p></div><b>↗</b></div>
-          <div class="service-item"><span>03</span><div><h3>Rent or lease</h3><p>Find or offer property for rental and leasing needs.</p></div><b>↗</b></div>
-          <div class="service-item"><span>04</span><div><h3>Property investment</h3><p>Discuss land and property opportunities aligned with your plans.</p></div><b>↗</b></div>
+      <div class="grid">
+        <div class="service-card">
+          <div class="symbol">🏡</div>
+          <h3>Residential Properties</h3>
+          <p>Plots, houses and residential property buying and selling.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="symbol">🏢</div>
+          <h3>Commercial Properties</h3>
+          <p>Commercial plots, shops and business property opportunities.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="symbol">🌾</div>
+          <h3>Agricultural Land</h3>
+          <p>Agricultural land options for farming and investment purposes.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="symbol">🏭</div>
+          <h3>Industrial Properties</h3>
+          <p>Industrial land and property opportunities for businesses.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="symbol">🔑</div>
+          <h3>Rentals</h3>
+          <p>Assistance with rental properties and tenant requirements.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="symbol">📈</div>
+          <h3>Property Investment</h3>
+          <p>Guidance in exploring real estate investment opportunities.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="listings-section" id="properties">
+      <div class="section-heading">
+        <small>AVAILABLE OPPORTUNITIES</small>
+        <h2>Featured Properties</h2>
+        <p>Explore property opportunities listed by Purewal Estates.</p>
+      </div>
+
+      <div id="listing-grid">
+        <div class="listing-placeholder">
+          Property listings are loading. Please check back shortly.
         </div>
       </div>
     </section>
 
     <section class="locations">
-      <div class="section-wrap location-inner">
-        <div><div class="section-kicker light-kicker">ROOTED IN THE REGION</div><h2>Local reach.<br><em>Personal attention.</em></h2></div>
-        <div class="location-list"><span>01 <b>Kurali</b></span><span>02 <b>Morinda</b></span><span>03 <b>Kharar</b></span></div>
+      <h2>Serving Your Property Needs</h2>
+      <p>Local real estate assistance across our key service areas.</p>
+      <div class="location-tags">
+        <span>Kurali</span>
+        <span>Morinda</span>
+        <span>Kharar</span>
       </div>
     </section>
 
-    <section class="contact section-wrap" id="contact">
-      <div class="contact-intro">
-        <div class="section-kicker">LET'S TALK PROPERTY</div>
-        <h2>Your next move<br>starts with a <em>conversation.</em></h2>
-        <p>Share what you are looking for. Our team will get in touch.</p>
-
-        <a class="map-link"
-           href="https://maps.app.goo.gl/qNGqawBojp1VQktT8"
-           target="_blank"
-           rel="noopener noreferrer">
-          Find our office in Kurali <span>↗</span>
-        </a>
+    <section id="contact">
+      <div class="section-heading">
+        <small>GET IN TOUCH</small>
+        <h2>Let's Discuss Your Property Needs</h2>
+        <p>Contact our team for buying, selling, renting or property enquiries.</p>
       </div>
 
-      <div class="contact-panel">
-        <div class="contact-person"><div><small>CONTACT</small><h3>Rassveen Singh</h3></div><a href="tel:+919056862022">+91 90568 62022</a></div>
-        <div class="contact-person"><div><small>CONTACT</small><h3>Parminder Singh</h3></div><a href="tel:+919463596573">+91 94635 96573</a></div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Contact Purewal Estates</h3>
 
-        <form id="enquiry-form">
-          <label for="name">Your name</label>
-          <input id="name" name="name" placeholder="Enter your name" required>
+          <div class="contact-person">
+            <strong>Rassveen Singh</strong>
+            <a href="tel:+919056862022">+91 90568 62022</a>
+          </div>
 
-          <label for="phone">Phone number</label>
-          <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+          <div class="contact-person">
+            <strong>Parminder Singh</strong>
+            <a href="tel:+9194635973">+91 94635 973</a>
+          </div>
 
-          <label for="interest">I am interested in</label>
-          <select id="interest" name="interest">
-            <option>Buying a property</option>
-            <option>Selling a property</option>
-            <option>Renting / leasing</option>
-            <option>Property investment</option>
-            <option>Other enquiry</option>
-          </select>
+          <p style="margin-top:20px;color:#687587;">
+            Serving Kurali, Morinda and Kharar, Punjab.
+          </p>
+        </div>
 
-          <label for="message">Your requirements</label>
-          <textarea id="message" name="message" rows="3" placeholder="Location, budget or property details (optional)"></textarea>
+        <div class="form-card">
+          <h3>Send a Property Enquiry</h3>
 
-          <button class="button button-gold submit-button" type="submit">Send enquiry on WhatsApp <span>↗</span></button>
-          <p class="form-hint">Your enquiry opens in WhatsApp so you can review and send it.</p>
-        </form>
+          <form id="enquiry-form">
+            <input type="text" id="customer-name" placeholder="Your Name" required>
+            <input type="tel" id="customer-phone" placeholder="Your Phone Number" required>
+
+            <select id="property-type" required>
+              <option value="">Select Property Requirement</option>
+              <option>Residential Property</option>
+              <option>Commercial Property</option>
+              <option>Agricultural Land</option>
+              <option>Industrial Property</option>
+              <option>Rental Property</option>
+              <option>Property Investment</option>
+            </select>
+
+            <textarea id="customer-message" placeholder="Tell us what you are looking for"></textarea>
+
+            <button class="submit-btn" type="submit">Send Enquiry on WhatsApp</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-main">
-      <a class="brand footer-brand" href="#home">
-        <span class="brand-mark">P<span>E</span></span>
-        <span class="brand-copy"><strong>PUREWAL ESTATES</strong><small>KURALI, PUNJAB</small></span>
-      </a>
-
-      <p>PROPERTY • TRUST • INVESTMENT</p>
-
-      <a href="https://maps.app.goo.gl/qNGqawBojp1VQktT8"
-         target="_blank"
-         rel="noopener noreferrer">
-        Find our office in Kurali ↗
-      </a>
-    </div>
-
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Purewal Estates. All rights reserved.</span>
-      <span>Kurali · Morinda · Kharar</span>
-    </div>
+  <footer>
+    <strong>PUREWAL ESTATES</strong>
+    <span>PROPERTY • TRUST • INVESTMENT</span>
+    <p>Residential • Commercial • Agricultural • Industrial • Rentals</p>
+    <p>Serving Kurali, Morinda and Kharar, Punjab.</p>
+    <p>© <span id="current-year"></span> Purewal Estates. All Rights Reserved.</p>
   </footer>
 
   <a class="whatsapp-float"
-     href="https://wa.me/919056862022?text=Hello%20Purewal%20Estates%2C%20I%20would%20like%20to%20enquire%20about%20a%20property."
+     href="https://wa.me/919056862022"
      target="_blank"
-     rel="noopener noreferrer"
-     aria-label="Chat with Purewal Estates on WhatsApp">✆</a>
+     rel="noopener">
+    WhatsApp Us
+  </a>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+
+    document.getElementById("enquiry-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("customer-name").value.trim();
+      const phone = document.getElementById("customer-phone").value.trim();
+      const type = document.getElementById("property-type").value;
+      const message = document.getElementById("customer-message").value.trim();
+
+      const text =
+        "Hello Purewal Estates,%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Phone: " + encodeURIComponent(phone) + "%0A" +
+        "Requirement: " + encodeURIComponent(type) + "%0A" +
+        "Message: " + encodeURIComponent(message);
+
+      window.open("https://wa.me/919056862022?text=" + text, "_blank");
+    });
+  </script>
+
+  <script src="script.js" defer></script>
+  <script type="module" src="listings.js"></script>
+
 </body>
 </html>
