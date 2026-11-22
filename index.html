@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Purewal Estates | Property Dealers in Kurali, Morinda & Kharar</title>
-
   <meta name="description" content="Purewal Estates helps you buy, sell and rent residential, commercial, agricultural and industrial properties in Kurali, Morinda and Kharar, Punjab. Contact us today.">
-
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://purewalestates.purewalsaab14.workers.dev/">
 
@@ -16,8 +14,11 @@
   <meta property="og:description" content="Your trusted property partner in Kurali, Morinda and Kharar, Punjab.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://purewalestates.purewalsaab14.workers.dev/">
-
   <meta name="theme-color" content="#101c2c">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -57,6 +58,20 @@
   </script>
 
   <style>
+    :root {
+      --navy: #101c2c;
+      --navy-light: #1b3048;
+      --gold: #c5a16a;
+      --gold-light: #e4cda5;
+      --cream: #f7f5f0;
+      --white: #ffffff;
+      --text: #263448;
+      --muted: #748092;
+      --border: #e8e4dc;
+      --heading: "Playfair Display", Georgia, serif;
+      --body: "DM Sans", Arial, sans-serif;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -65,13 +80,14 @@
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 90px;
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f8fa;
-      color: #182333;
-      line-height: 1.6;
+      font-family: var(--body);
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
       overflow-x: hidden;
     }
 
@@ -84,227 +100,358 @@
     }
 
     .topbar {
-      background: #101c2c;
-      color: #fff;
-      padding: 10px 6%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px;
-      font-size: 13px;
-    }
-
-    header {
-      background: #fff;
-      padding: 18px 6%;
+      background: #0b1522;
+      color: #d5d9df;
+      padding: 9px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 12px;
       flex-wrap: wrap;
-      gap: 18px;
-      box-shadow: 0 3px 15px rgba(0,0,0,.06);
+      font-size: 11px;
+      letter-spacing: 1.1px;
+    }
+
+    .topbar strong {
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(12px);
+      padding: 17px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+      box-shadow: 0 4px 24px rgba(16,28,44,.06);
+    }
+
+    .brand {
+      flex-shrink: 0;
     }
 
     .brand h1 {
-      font-family: Georgia, serif;
-      color: #14243a;
+      font-family: var(--heading);
+      color: var(--navy);
       font-size: 27px;
+      line-height: 1.2;
       letter-spacing: 1px;
     }
 
     .brand p {
-      color: #b18a48;
-      font-size: 11px;
+      color: #a7834d;
+      font-size: 9px;
       letter-spacing: 3px;
-      font-weight: bold;
+      font-weight: 700;
+      margin-top: 4px;
     }
 
     nav {
       display: flex;
+      align-items: center;
+      gap: 25px;
       flex-wrap: wrap;
-      gap: 22px;
     }
 
     nav a {
-      color: #24364c;
-      font-size: 14px;
-      font-weight: bold;
+      color: #344154;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      transition: color .2s;
     }
 
     nav a:hover {
-      color: #b18a48;
+      color: #ad8549;
+    }
+
+    .nav-contact {
+      background: var(--navy);
+      color: white !important;
+      padding: 10px 17px;
+      border-radius: 2px;
+    }
+
+    .nav-contact:hover {
+      background: #a7834d;
     }
 
     .hero {
-      min-height: 490px;
-      padding: 90px 7%;
+      min-height: 630px;
+      position: relative;
       display: flex;
       align-items: center;
-      background: linear-gradient(110deg, #101c2c 0%, #1c3550 75%, #263e54 100%);
-      color: #fff;
+      padding: 95px 8%;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(8,18,30,.94) 0%, rgba(8,18,30,.78) 48%, rgba(8,18,30,.24) 100%),
+        url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=85") center 55% / cover no-repeat;
     }
 
     .hero-content {
-      max-width: 720px;
+      max-width: 730px;
+      position: relative;
+      z-index: 1;
     }
 
     .eyebrow {
-      color: #d9b777;
-      letter-spacing: 3px;
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 18px;
+      color: var(--gold-light);
+      font-size: 11px;
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 22px;
+      text-transform: uppercase;
     }
 
     .hero h2 {
-      font-family: Georgia, serif;
-      font-size: clamp(38px, 6vw, 60px);
+      font-family: var(--heading);
+      font-size: clamp(43px, 6vw, 72px);
       line-height: 1.12;
-      margin-bottom: 22px;
+      font-weight: 500;
+      margin-bottom: 24px;
     }
 
     .hero h2 span {
-      color: #d9b777;
+      color: var(--gold-light);
+      display: block;
     }
 
     .hero p {
-      max-width: 590px;
-      color: #e0e6ed;
-      font-size: 17px;
-      margin-bottom: 30px;
+      max-width: 550px;
+      color: #e0e4e9;
+      font-size: 16px;
+      line-height: 1.9;
+      margin-bottom: 33px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .btn {
-      display: inline-block;
-      padding: 13px 23px;
-      border-radius: 4px;
-      font-weight: bold;
-      margin: 5px 8px 5px 0;
-      transition: .2s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 25px;
+      min-height: 49px;
+      font-size: 11px;
+      letter-spacing: 1.1px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: .25s;
     }
 
     .btn-gold {
-      background: #c49b59;
+      background: var(--gold);
       color: #101c2c;
     }
 
-    .btn-outline {
-      border: 1px solid #d9b777;
-      color: #fff;
+    .btn-gold:hover {
+      background: #e2c99c;
+      transform: translateY(-3px);
     }
 
-    .btn:hover {
-      transform: translateY(-2px);
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.65);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--navy);
+    }
+
+    .intro-strip {
+      background: var(--navy);
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 27px 8%;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .intro-item {
+      border-right: 1px solid rgba(255,255,255,.14);
+    }
+
+    .intro-item:last-child {
+      border-right: 0;
+    }
+
+    .intro-item strong {
+      display: block;
+      color: var(--gold-light);
+      font-family: var(--heading);
+      font-size: 21px;
+      font-weight: 500;
+    }
+
+    .intro-item span {
+      color: #c4ccd5;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
     }
 
     section {
-      padding: 75px 7%;
+      padding: 88px 8%;
     }
 
     .section-heading {
       text-align: center;
-      margin-bottom: 38px;
+      margin-bottom: 46px;
     }
 
     .section-heading small {
-      color: #b18a48;
-      font-weight: bold;
+      color: #a7834d;
+      font-size: 10px;
       letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
     .section-heading h2 {
-      font-family: Georgia, serif;
-      font-size: 34px;
-      color: #14243a;
-      margin-top: 8px;
+      font-family: var(--heading);
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 43px);
+      font-weight: 500;
+      line-height: 1.25;
+      margin-top: 9px;
     }
 
     .section-heading p {
-      color: #687587;
+      color: var(--muted);
       max-width: 650px;
-      margin: 10px auto 0;
+      margin: 12px auto 0;
+      font-size: 14px;
+    }
+
+    .about-section {
+      background: var(--cream);
     }
 
     .about {
       max-width: 850px;
       margin: auto;
       text-align: center;
-      color: #5b6675;
-      font-size: 16px;
+      color: #5d6878;
+      font-size: 15px;
+      line-height: 2;
     }
 
-    .grid {
+    .about-highlight {
+      display: block;
+      font-family: var(--heading);
+      color: var(--navy);
+      font-size: 23px;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+
+    .services-section {
+      background: #fff;
+    }
+
+    .service-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .service-card {
       background: #fff;
-      padding: 28px 23px;
-      border-radius: 8px;
-      border: 1px solid #e8ebef;
-      box-shadow: 0 5px 20px rgba(0,0,0,.04);
+      padding: 30px 25px;
+      border: 1px solid var(--border);
+      border-bottom: 3px solid transparent;
+      transition: .25s;
       min-width: 0;
     }
 
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-bottom-color: var(--gold);
+      box-shadow: 0 14px 35px rgba(16,28,44,.08);
+    }
+
     .service-card .symbol {
-      font-size: 30px;
-      margin-bottom: 12px;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--cream);
+      color: #a7834d;
+      font-size: 23px;
+      margin-bottom: 18px;
     }
 
     .service-card h3 {
-      color: #172b43;
+      color: var(--navy);
+      font-family: var(--heading);
+      font-size: 20px;
+      font-weight: 500;
       margin-bottom: 9px;
-      font-size: 19px;
     }
 
     .service-card p {
-      color: #687587;
-      font-size: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
     }
 
     .listings-section {
-      background: #eef1f5;
+      background: var(--cream);
     }
-
-    /* PROPERTY LISTING GRID */
 
     #listing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-      gap: 22px;
+      gap: 24px;
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
       align-items: stretch;
     }
 
-    /* PROPERTY CARD */
-
     .listing-card {
-      background: #fff;
-      border-radius: 10px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 3px;
       overflow: hidden;
-      border: 1px solid #e5e9ee;
-      box-shadow: 0 5px 18px rgba(0,0,0,.06);
       width: 100%;
       min-width: 0;
       max-width: 100%;
       display: flex;
       flex-direction: column;
+      box-shadow: 0 5px 20px rgba(16,28,44,.04);
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .listing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 35px rgba(16,28,44,.11);
     }
 
     .listing-card img {
       display: block;
       width: 100%;
-      height: 230px;
+      height: 235px;
       object-fit: cover;
       object-position: center;
     }
 
     .listing-card-body {
-      padding: 20px;
+      padding: 21px;
       display: flex;
       flex-direction: column;
       flex: 1;
@@ -312,27 +459,28 @@
     }
 
     .listing-card-body h3 {
+      font-family: var(--heading);
       font-size: 20px;
-      line-height: 1.35;
-      color: #14243a;
+      line-height: 1.4;
+      color: var(--navy);
       margin-bottom: 10px;
       overflow-wrap: anywhere;
-      word-break: normal;
     }
 
     .listing-meta {
-      font-size: 14px;
-      color: #687587;
-      line-height: 1.6;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.7;
       margin-bottom: 13px;
       overflow-wrap: anywhere;
     }
 
     .listing-price {
-      font-size: 21px;
+      font-family: var(--heading);
+      font-size: 22px;
       line-height: 1.4;
-      font-weight: bold;
-      color: #a67c3d;
+      font-weight: 600;
+      color: #a7834d;
       margin-bottom: 17px;
       overflow-wrap: anywhere;
     }
@@ -342,46 +490,46 @@
       width: 100%;
       max-width: 100%;
       text-align: center;
-      background: #14243a;
+      background: var(--navy);
       color: #fff;
       padding: 13px 10px;
-      border-radius: 5px;
-      font-size: 13px;
-      font-weight: bold;
+      border-radius: 2px;
+      font-size: 11px;
+      letter-spacing: 1px;
+      font-weight: 700;
       margin-top: auto;
       overflow-wrap: anywhere;
+      transition: .2s;
     }
 
     .listing-enquire:hover {
-      background: #b18a48;
-      color: #101c2c;
+      background: var(--gold);
+      color: var(--navy);
     }
 
     .listing-placeholder,
     .listing-status {
       text-align: center;
       padding: 30px 20px;
-      color: #687587;
+      color: var(--muted);
       background: #fff;
-      border-radius: 8px;
+      border: 1px solid var(--border);
       grid-column: 1 / -1;
       width: 100%;
     }
 
     .locations {
-      background: #14243a;
-      color: #fff;
+      background: var(--navy);
+      color: white;
       text-align: center;
     }
 
-    .locations h2 {
-      font-family: Georgia, serif;
-      font-size: 34px;
-      margin-bottom: 12px;
+    .locations .section-heading h2 {
+      color: white;
     }
 
-    .locations p {
-      color: #d5dce5;
+    .locations .section-heading p {
+      color: #c4ccd5;
     }
 
     .location-tags {
@@ -393,68 +541,116 @@
     }
 
     .location-tags span {
-      border: 1px solid #c49b59;
-      padding: 9px 20px;
-      border-radius: 30px;
-      color: #f0d7a8;
+      border: 1px solid var(--gold);
+      padding: 9px 22px;
+      color: var(--gold-light);
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .contact-section {
+      background: var(--cream);
     }
 
     .contact-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+      align-items: stretch;
     }
 
     .contact-card,
     .form-card {
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.05);
+      background: white;
+      padding: 32px;
+      border: 1px solid var(--border);
       min-width: 0;
+      box-shadow: 0 5px 20px rgba(16,28,44,.04);
     }
 
     .contact-card h3,
     .form-card h3 {
-      color: #14243a;
-      margin-bottom: 18px;
-      font-size: 21px;
+      font-family: var(--heading);
+      color: var(--navy);
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 22px;
     }
 
     .contact-person {
-      padding: 13px 0;
+      padding: 15px 0;
       border-bottom: 1px solid #edf0f3;
-    }
-
-    .contact-person:last-child {
-      border-bottom: 0;
     }
 
     .contact-person strong {
       display: block;
-      color: #24364c;
+      color: var(--navy);
+      font-size: 14px;
+      margin-bottom: 4px;
     }
 
     .contact-person a {
-      color: #a67c3d;
-      font-weight: bold;
+      color: #a7834d;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .contact-person a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-note {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+    .map-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 20px;
+      padding: 12px 17px;
+      background: var(--navy);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .8px;
+      transition: .2s;
+    }
+
+    .map-link:hover {
+      background: var(--gold);
+      color: var(--navy);
     }
 
     input,
     select,
     textarea {
       width: 100%;
-      padding: 13px;
-      margin-bottom: 13px;
+      padding: 13px 14px;
+      margin-bottom: 14px;
       border: 1px solid #dce1e7;
-      border-radius: 4px;
-      font: inherit;
+      border-radius: 2px;
+      font-family: var(--body);
+      font-size: 13px;
       background: #fff;
+      color: var(--text);
       max-width: 100%;
     }
 
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 2px rgba(197,161,106,.12);
+    }
+
     textarea {
-      min-height: 110px;
+      min-height: 115px;
       resize: vertical;
     }
 
@@ -466,70 +662,111 @@
 
     .submit-btn {
       width: 100%;
-      background: #14243a;
+      background: var(--navy);
       color: #fff;
-      padding: 14px;
-      border-radius: 4px;
-      font-weight: bold;
+      padding: 15px;
+      font-size: 11px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: .2s;
     }
 
     .submit-btn:hover {
-      background: #b18a48;
+      background: var(--gold);
+      color: var(--navy);
     }
 
     footer {
-      background: #0d1826;
+      background: #0b1522;
       color: #cbd3dd;
-      padding: 35px 7%;
+      padding: 42px 7%;
       text-align: center;
     }
 
     footer strong {
       display: block;
-      font-family: Georgia, serif;
-      font-size: 23px;
-      color: #fff;
+      font-family: var(--heading);
+      font-size: 27px;
+      color: white;
       margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+
+    footer .tagline {
+      color: var(--gold-light);
+      font-size: 10px;
+      letter-spacing: 3px;
     }
 
     footer p {
-      font-size: 13px;
-      margin-top: 8px;
+      font-size: 12px;
+      margin-top: 10px;
+      color: #aeb8c4;
     }
 
     .whatsapp-float {
       position: fixed;
-      right: 20px;
-      bottom: 20px;
-      z-index: 10;
-      background: #20b968;
+      right: 22px;
+      bottom: 22px;
+      z-index: 30;
+      background: #1da967;
       color: #fff;
-      padding: 13px 18px;
+      padding: 13px 19px;
       border-radius: 40px;
-      font-weight: bold;
-      box-shadow: 0 4px 15px rgba(0,0,0,.2);
+      font-size: 12px;
+      letter-spacing: .3px;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0,0,0,.22);
+      transition: .2s;
     }
 
-    /* TABLET */
+    .whatsapp-float:hover {
+      background: #168451;
+      transform: translateY(-3px);
+    }
 
     @media (max-width: 900px) {
-      #listing-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 16px;
+      header {
+        padding: 16px 5%;
       }
 
-      .listing-card img {
-        height: 200px;
+      nav {
+        gap: 15px;
+      }
+
+      .hero {
+        min-height: 560px;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .contact-grid {
+        gap: 18px;
       }
     }
 
-    /* MOBILE */
-
     @media (max-width: 650px) {
-      header {
+      html {
+        scroll-padding-top: 145px;
+      }
+
+      .topbar {
         justify-content: center;
         text-align: center;
-        padding: 16px 5%;
+        padding: 9px 5%;
+        font-size: 10px;
+        gap: 3px;
+      }
+
+      header {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 5%;
+        gap: 13px;
       }
 
       .brand h1 {
@@ -537,133 +774,160 @@
       }
 
       .brand p {
-        font-size: 10px;
+        font-size: 9px;
         letter-spacing: 2px;
       }
 
       nav {
         justify-content: center;
-        gap: 12px 16px;
+        gap: 11px 17px;
       }
 
       nav a {
-        font-size: 13px;
+        font-size: 11px;
+      }
+
+      .nav-contact {
+        padding: 7px 11px;
       }
 
       .hero {
+        min-height: 510px;
         padding: 65px 7%;
-        min-height: 430px;
+        background-position: 58% center;
       }
 
       .hero h2 {
-        font-size: 39px;
+        font-size: 43px;
       }
 
       .hero p {
-        font-size: 15px;
+        font-size: 14px;
+      }
+
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+      }
+
+      .btn {
+        padding: 13px 17px;
+        font-size: 10px;
+      }
+
+      .intro-strip {
+        padding: 22px 5%;
+        gap: 8px;
+      }
+
+      .intro-item strong {
+        font-size: 17px;
+      }
+
+      .intro-item span {
+        font-size: 8px;
+        letter-spacing: .7px;
       }
 
       section {
-        padding: 55px 6%;
+        padding: 60px 6%;
       }
 
-      .topbar {
-        justify-content: center;
-        text-align: center;
-        padding: 10px 5%;
-        font-size: 12px;
+      .section-heading {
+        margin-bottom: 32px;
       }
 
       .section-heading h2 {
-        font-size: 29px;
+        font-size: 30px;
       }
 
-      /* One full-width property card per row */
+      .about {
+        font-size: 14px;
+      }
+
+      .about-highlight {
+        font-size: 20px;
+      }
+
+      .service-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+      }
+
+      .service-card {
+        padding: 23px;
+      }
 
       #listing-grid {
-        display: grid;
         grid-template-columns: minmax(0, 1fr);
         gap: 18px;
-        width: 100%;
-        padding: 0;
-      }
-
-      .listing-card {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        border-radius: 9px;
       }
 
       .listing-card img {
-        width: 100%;
-        height: 195px;
-        object-fit: cover;
+        height: 205px;
       }
 
       .listing-card-body {
-        padding: 16px;
-        width: 100%;
+        padding: 17px;
       }
 
       .listing-card-body h3 {
-        font-size: 18px;
-        line-height: 1.4;
-      }
-
-      .listing-meta {
-        font-size: 13px;
-        line-height: 1.5;
-      }
-
-      .listing-price {
         font-size: 19px;
       }
 
-      .listing-enquire {
-        width: 100%;
-        font-size: 12px;
-        padding: 12px 8px;
+      .listing-price {
+        font-size: 20px;
+      }
+
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 17px;
       }
 
       .contact-card,
       .form-card {
-        padding: 22px 18px;
+        padding: 24px 19px;
+      }
+
+      .locations .section-heading h2 {
+        font-size: 29px;
       }
 
       .whatsapp-float {
         right: 12px;
         bottom: 12px;
         padding: 11px 15px;
-        font-size: 13px;
+        font-size: 11px;
       }
     }
 
-    /* SMALL MOBILE */
-
     @media (max-width: 380px) {
       .hero h2 {
-        font-size: 34px;
+        font-size: 37px;
       }
 
-      .listing-card img {
-        height: 175px;
-      }
-
-      .listing-card-body {
-        padding: 14px;
-      }
-
-      .listing-card-body h3 {
-        font-size: 17px;
-      }
-
-      .listing-price {
-        font-size: 18px;
+      .intro-item strong {
+        font-size: 15px;
       }
 
       .section-heading h2 {
-        font-size: 26px;
+        font-size: 27px;
+      }
+
+      .listing-card img {
+        height: 180px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
       }
     }
   </style>
@@ -672,45 +936,77 @@
 <body>
 
   <div class="topbar">
-    <span>PUREWAL ESTATES — PROPERTY • TRUST • INVESTMENT</span>
+    <span><strong>PUREWAL ESTATES</strong> — PROPERTY • TRUST • INVESTMENT</span>
     <span>Kurali | Morinda | Kharar, Punjab</span>
   </div>
 
   <header>
-    <div class="brand">
+    <a class="brand" href="#home" aria-label="Purewal Estates home">
       <h1>PUREWAL ESTATES</h1>
       <p>PROPERTY • TRUST • INVESTMENT</p>
-    </div>
+    </a>
 
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#properties">Properties</a>
-      <a href="#contact">Contact</a>
+      <a class="nav-contact" href="#contact">Contact Us</a>
     </nav>
   </header>
 
   <main>
+
     <section class="hero" id="home">
       <div class="hero-content">
-        <div class="eyebrow">YOUR PROPERTY. YOUR FUTURE.</div>
-        <h2>Find the Right Property. <span>Build Your Future.</span></h2>
+        <div class="eyebrow">A BETTER WAY TO FIND PROPERTY</div>
+
+        <h2>
+          Discover the Right Property.
+          <span>Build Your Future.</span>
+        </h2>
+
         <p>
-          Your trusted real estate partner for buying, selling and renting
-          properties in Kurali, Morinda and Kharar, Punjab.
+          Thoughtful property guidance for buying, selling and renting
+          residential, commercial, agricultural and industrial properties
+          across Kurali, Morinda and Kharar, Punjab.
         </p>
-        <a class="btn btn-gold" href="#properties">Explore Properties</a>
-        <a class="btn btn-outline" href="#contact">Contact Us</a>
+
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#properties">Explore Properties</a>
+          <a class="btn btn-outline" href="#contact">Speak With Our Team</a>
+        </div>
       </div>
     </section>
 
-    <section id="about">
+    <div class="intro-strip">
+      <div class="intro-item">
+        <strong>Residential</strong>
+        <span>Homes & Plots</span>
+      </div>
+
+      <div class="intro-item">
+        <strong>Commercial</strong>
+        <span>Business Spaces</span>
+      </div>
+
+      <div class="intro-item">
+        <strong>Investment</strong>
+        <span>Land & Opportunities</span>
+      </div>
+    </div>
+
+    <section class="about-section" id="about">
       <div class="section-heading">
         <small>WHO WE ARE</small>
         <h2>About Purewal Estates</h2>
       </div>
+
       <div class="about">
+        <span class="about-highlight">
+          Property decisions deserve clarity, confidence and the right guidance.
+        </span>
+
         <p>
           Purewal Estates is a real estate business serving Kurali, Morinda
           and Kharar, Punjab. We assist clients with residential plots,
@@ -722,49 +1018,54 @@
       </div>
     </section>
 
-    <section id="services" style="background:#fff;">
+    <section class="services-section" id="services">
       <div class="section-heading">
         <small>WHAT WE DO</small>
-        <h2>Our Property Services</h2>
-        <p>Property solutions for individuals, families, businesses and investors.</p>
+        <h2>Property Services</h2>
+        <p>
+          Carefully guided property solutions for individuals, families,
+          businesses and investors.
+        </p>
       </div>
 
-      <div class="grid">
+      <div class="service-grid">
+
         <div class="service-card">
-          <div class="symbol">🏡</div>
+          <div class="symbol">⌂</div>
           <h3>Residential Properties</h3>
-          <p>Plots, houses and residential property buying and selling.</p>
+          <p>Residential plots, houses and property buying and selling.</p>
         </div>
 
         <div class="service-card">
-          <div class="symbol">🏢</div>
+          <div class="symbol">▦</div>
           <h3>Commercial Properties</h3>
           <p>Commercial plots, shops and business property opportunities.</p>
         </div>
 
         <div class="service-card">
-          <div class="symbol">🌾</div>
+          <div class="symbol">♧</div>
           <h3>Agricultural Land</h3>
           <p>Agricultural land options for farming and investment purposes.</p>
         </div>
 
         <div class="service-card">
-          <div class="symbol">🏭</div>
+          <div class="symbol">▥</div>
           <h3>Industrial Properties</h3>
           <p>Industrial land and property opportunities for businesses.</p>
         </div>
 
         <div class="service-card">
-          <div class="symbol">🔑</div>
-          <h3>Rentals</h3>
+          <div class="symbol">⌑</div>
+          <h3>Rental Properties</h3>
           <p>Assistance with rental properties and tenant requirements.</p>
         </div>
 
         <div class="service-card">
-          <div class="symbol">📈</div>
+          <div class="symbol">◇</div>
           <h3>Property Investment</h3>
           <p>Guidance in exploring real estate investment opportunities.</p>
         </div>
+
       </div>
     </section>
 
@@ -772,7 +1073,9 @@
       <div class="section-heading">
         <small>AVAILABLE OPPORTUNITIES</small>
         <h2>Featured Properties</h2>
-        <p>Explore property opportunities listed by Purewal Estates.</p>
+        <p>
+          Explore property opportunities listed by Purewal Estates.
+        </p>
       </div>
 
       <div id="listing-grid">
@@ -783,8 +1086,14 @@
     </section>
 
     <section class="locations">
-      <h2>Serving Your Property Needs</h2>
-      <p>Local real estate assistance across our key service areas.</p>
+      <div class="section-heading">
+        <small>OUR SERVICE AREAS</small>
+        <h2>Local Knowledge. Property Opportunities.</h2>
+        <p>
+          Real estate assistance across our key service areas.
+        </p>
+      </div>
+
       <div class="location-tags">
         <span>Kurali</span>
         <span>Morinda</span>
@@ -792,14 +1101,17 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section class="contact-section" id="contact">
       <div class="section-heading">
         <small>GET IN TOUCH</small>
         <h2>Let's Discuss Your Property Needs</h2>
-        <p>Contact our team for buying, selling, renting or property enquiries.</p>
+        <p>
+          Contact our team for buying, selling, renting or property enquiries.
+        </p>
       </div>
 
       <div class="contact-grid">
+
         <div class="contact-card">
           <h3>Contact Purewal Estates</h3>
 
@@ -810,20 +1122,39 @@
 
           <div class="contact-person">
             <strong>Parminder Singh</strong>
-            <a href="tel:+9194635973">+91 94635 973</a>
+            <a href="tel:+919463596573">+91 94635 96573</a>
           </div>
 
-          <p style="margin-top:20px;color:#687587;">
+          <p class="contact-note">
             Serving Kurali, Morinda and Kharar, Punjab.
           </p>
+
+          <a
+            class="map-link"
+            href="https://maps.app.goo.gl/qNGqawBojp1VQktT8"
+            target="_blank"
+            rel="noopener noreferrer">
+            View on Google Maps ↗
+          </a>
         </div>
 
         <div class="form-card">
           <h3>Send a Property Enquiry</h3>
 
           <form id="enquiry-form">
-            <input type="text" id="customer-name" placeholder="Your Name" required>
-            <input type="tel" id="customer-phone" placeholder="Your Phone Number" required>
+            <input
+              type="text"
+              id="customer-name"
+              placeholder="Your Name"
+              autocomplete="name"
+              required>
+
+            <input
+              type="tel"
+              id="customer-phone"
+              placeholder="Your Phone Number"
+              autocomplete="tel"
+              required>
 
             <select id="property-type" required>
               <option value="">Select Property Requirement</option>
@@ -835,27 +1166,36 @@
               <option>Property Investment</option>
             </select>
 
-            <textarea id="customer-message" placeholder="Tell us what you are looking for"></textarea>
+            <textarea
+              id="customer-message"
+              placeholder="Tell us what you are looking for"></textarea>
 
-            <button class="submit-btn" type="submit">Send Enquiry on WhatsApp</button>
+            <button class="submit-btn" type="submit">
+              Send Enquiry on WhatsApp
+            </button>
           </form>
         </div>
+
       </div>
     </section>
+
   </main>
 
   <footer>
     <strong>PUREWAL ESTATES</strong>
-    <span>PROPERTY • TRUST • INVESTMENT</span>
+    <span class="tagline">PROPERTY • TRUST • INVESTMENT</span>
+
     <p>Residential • Commercial • Agricultural • Industrial • Rentals</p>
     <p>Serving Kurali, Morinda and Kharar, Punjab.</p>
     <p>© <span id="current-year"></span> Purewal Estates. All Rights Reserved.</p>
   </footer>
 
-  <a class="whatsapp-float"
-     href="https://wa.me/919056862022"
-     target="_blank"
-     rel="noopener">
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/919056862022"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact Purewal Estates on WhatsApp">
     WhatsApp Us
   </a>
 
@@ -871,23 +1211,23 @@
       const type = document.getElementById("property-type").value;
       const message = document.getElementById("customer-message").value.trim();
 
-      const text =
-        "Hello Purewal Estates,%0A%0A" +
-        "Name: " + encodeURIComponent(name) + "%0A" +
-        "Phone: " + encodeURIComponent(phone) + "%0A" +
-        "Requirement: " + encodeURIComponent(type) + "%0A" +
-        "Message: " + encodeURIComponent(message);
+      const enquiryText =
+        "Hello Purewal Estates,\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Requirement: " + type + "\n" +
+        "Message: " + (message || "Not provided");
 
-      window.open("https://wa.me/919056862022?text=" + text, "_blank");
+      const whatsappURL =
+        "https://wa.me/919056862022?text=" +
+        encodeURIComponent(enquiryText);
+
+      window.open(whatsappURL, "_blank", "noopener,noreferrer");
     });
   </script>
 
   <script src="script.js" defer></script>
   <script type="module" src="listings.js"></script>
-
-</body>
-</html>
-
 
 </body>
 </html>
